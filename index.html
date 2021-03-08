@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html class="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maison Brasson</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+</head>
+
+<body>
+  <!-- hero header -->
+  <nav class="navbar navbar-expand-lg is-black navbar-dark is-fixed-top">
+    <div class="container-fluid">
+      <a href="index.html"><img src="img/Logo.svg" alt="Maison brasson" width="auto" height="28"
+          style="filter: invert(1);"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="navbar-item text-white pr-0 mt-1" href="#presentation">La maison</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="navbar-item pl-0 text-white dropdown-toggle" href="#produits" id="navbarScrollingDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">Notre gamme de Produits</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="/gammes-Grannys.html">JUS GRANNYS</a></li>
+              <li><a class="dropdown-item" href="/gammes-sipsap.html">EAU DE BOULEAU SIP SAP</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/gammes-Grannys.html">AJVAR GRANNY’S SECRET</a></li>
+              <li><a class="dropdown-item" href="/gammes-Pecocko.html">SAUCES PIQUANTES PECOCKO</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="gammes-benlian.html">ROCKY RICE</a></li>
+              <li><a class="dropdown-item" href="gammes-benlian.html">CORN CHIPS</a></li>
+              <li><a class="dropdown-item" href="gammes-benlian.html">RICE SNACK</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="navbar-item  text-white" href="#partenaires">Les partenaires</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="navbar-item pr-3 text-white mt-1" href="#recommandations">contactez-nous</a>
+          </li>
+          <li>
+            <i class="fab fa-instagram pl-3 mt-1"></i>
+          </li>
+          <li>
+            <i class="fab fa-facebook pl-3 mt-1"></i>
+          </li>
+          <li>
+            <form>
+              <div>
+                <input type="search" id="maRecherche" name="q">
+                <button class="btn btn-sm">Rechercher</button>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="header-trigger"></div>
+
+  <section class="hero is-fullheight is-primary is-header">
+    <div class="hero-head">
+    </div>
+    <div class="hero-body is-paddingless is-relative has-preserve-3d">
+      <div class="brands is-absolute is-centered has-preserve-3d">
+        <h1 class="title is-1 is-inverted is-uppercase is-layer-2 has-text-centered grannysTitle">
+          <span id="grannys-title" class="grannys">Granny's secret</span>
+          <figure class="image">
+            <img src="img/heroAjvar.png">
+          </figure>
+        </h1>
+        <h1 class="title is-1 is-inverted is-uppercase is-layer-2 has-text-centered">
+          <span id="sipsap-title">SIP SAP</span>
+          <figure class="image sipsap">
+            <img src="img/heroSipSap.png">
+          </figure>
+        </h1>
+      </div>
+      <div class="is-absolute is-absolute-bottom is-layer-1">
+        <svg id="wave" viewBox="0 0 718 145" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" class="layer-main">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Artboard" fill="#1E1E1E">
+              <path
+                d="M1,9 L1,146.243723 L719,146.243723 L719,20.5604804 C513.187584,-27.0762639 45.4318794,134.129595 1,9 Z"
+                id="wave-1"></path>
+              <path
+                d="M0,19.5428521 L0,145.489266 L721,145.489266 L721,8.50697086 C457.977603,141.448671 218.969499,-60.840392 0,19.5428521 Z"
+                id="wave-2"></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <!-- <div class="is-absolute is-absolute-bottom is-absolute-right is-flex has-flex-column is-layer-2">
+          <div class="pagination-slider">
+            <span class="current">1</span><span> / </span><span>2</span>
+          </div>
+          <div class="next">
+            <span class="is-uppercase has-letter-spacing action-txt">next</span><span class="separator"></span>
+          </div>
+        </div>
+        <div class="is-absolute is-absolute-70-bottom is-absolute-left is-flex has-flex-column is-layer-2 is-hidden-mobile">
+          <div class="goto is-rotated-90">
+            <span class="separator"></span><span class="has-letter-spacing is-uppercase">scroll</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot"></div> -->
+  </section>
+
+
+  <!-- La maison section -->
+  <section id="presentation"
+    class="section is-primary has-padding-120-bottom has-margin-200-bottom has-padding-200-top">
+    <div class="container trigger">
+      <div class="columns">
+        <div class="column is-two-fifths is-offset-half">
+          <h2 class="title is-2">Maison Brasson déniche, au-delà des frontières françaises, produits gastronomiques
+            inédits et boissons d’exception</h2>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-5">
+          <h3 class="title is-3 is-uppercase has-text-weight-bold has-margin-vertical">La maison</h3>
+          <p>Alexandre Bralovic, fondateur de Maison Brasson, s’appuie sur ses origines serbes pour démarrer avec la
+            marque Granny’s Secret. Depuis 2012, il est le distributeur exclusif de cette sélection gourmande, en
+            France, il gère depuis d’une main experte, entouré de son équipe, l’entreprise Maison Brasson. Passionné par
+            les bons produits, en particulier ceux en provenance des Balkans et des pays Baltes Alexandre s’est donné
+            pour mission de proposer une large sélection de produits, à la fois gourmands et de première qualité, qui
+            reflètent un savoir faire respectueux de la matière première et des traditions.</p>
+        </div>
+        <div class="column is-5 is-offset-1 has-margin-135-top">
+          <p>Maison Brasson est un dénicheur de produits d’exception, spécialisé sur l’est et le nord de l’Europe. Les
+            marques que distribue la société s’inscrivent dans l'association du gout et du bien-être.</p>
+          <p>Alexandre et son équipe souhaitent faire découvrir des produits raffinés, gourmands et savoureux aux
+            gourmets curieux et avides de nouveautés. De la gastronomie de grande qualité, aux saveurs inégalables,
+            telles sont leurs valeurs !</p>
+          <h4 class="title is-4 is-uppercase">L’EQUIPE</h4>
+          <p>Appuyés par une équipe dédiée et fière de ses produits, Alexandre est en charge des relations commerciales
+            et Vanessa chapeaute la logistique et la satisfaction client.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Les marques section -->
+
+  <section>
+    <div class="container" id="produits">
+      <div class="row justify-content-center trigger">
+        <h2 class="title is-2 title-product">Notre Gammes de Produits</h2>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="carr-product" class="section">
+    <div class="container  trigger">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 trigger2">
+          <div class="is-centered">
+            <h3 class="title is-3 name-product is-uppercase">Jus Grannys</h3><br>
+            <p class="content-product">Des fruits entiers compotés au chaudron avec du jus de raisin blanc.
+              100% fruits, 100% gourmands ! Plus de 10 saveurs en 20cl ou 70cl !</p>
+          </div>
+          <figure class="image">
+            <a href="/gammes-Grannys.html"><img src="./img/Gamme/Grannys.png"></a>
+          </figure>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4 trigger2">
+          <div class="is-centered">
+            <h3 class="title is-3 name-product is-uppercase">Eau de bouleau Sip Sap</h3><br>
+            <p class="content-product">Des fruits entiers compotés au chaudron avec du jus de raisin blanc.
+              100% fruits, 100% gourmands ! Plus de 10 saveurs en 20cl ou 70cl !</p>
+          </div>
+          <figure class="image">
+            <a href="/gammes-sipsap.html"><img class="image" src="./img/Gamme/SipSap.png"></a>
+          </figure>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="carr-product-2" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 trigger2">
+          <div class="is-centered trigger">
+            <h3 class="title is-3 name-product is-uppercase">Ajvar Granny’s Secret</h3><br>
+            <p class="content-product">Des fruits entiers compotés au chaudron avec du jus de raisin blanc.
+              100% fruits, 100% gourmands ! Plus de 10 saveurs en 20cl ou 70cl !</p>
+          </div>
+          <figure class="image trigger">
+            <a href="/gammes-Grannys.html"><img src="./img/Gamme/Ajvar.png"></a>
+          </figure>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4 trigger2">
+          <div class="is-centered trigger">
+            <h3 class="title is-3 name-product is-uppercase">Sauces piquantes Pecocko</h3><br>
+            <p class="content-product">Des fruits entiers compotés au chaudron avec du jus de raisin blanc.
+              100% fruits, 100% gourmands ! Plus de 10 saveurs en 20cl ou 70cl !</p>
+          </div>
+          <figure class="image trigger">
+            <a href="/gammes-Pecocko.html"><img class="image" src="./img/Gamme/Pecocko.png"></a>
+          </figure>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="carr-product-3" class="section">
+    <div class="container trigger">
+      <div class="row">
+        <div class="col-md-3 trigger2">
+          <div class="is-centered">
+            <h3 class="title is-3 name-product is-uppercase">Rocky Rice</h3><br>
+            <p class="content-product">Des fruits entiers compotés au chaudron avec du jus de raisin blanc.
+              100% fruits, 100% gourmands ! Plus de 10 saveurs en 20cl ou 70cl !</p>
+          </div>
+          <figure class="image trigger">
+            <a href="/gammes-benlian.html"><img src="./img/Gamme/Rocky-Rice.png"></a>
+          </figure>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3 trigger2">
+          <div class="is-centered">
+            <h3 class="title is-3 name-product is-uppercase">Corn Chips</h3><br>
+            <p class="content-product">Des fruits entiers compotés au chaudron avec du jus de raisin blanc.
+              100% fruits, 100% gourmands ! Plus de 10 saveurs en 20cl ou 70cl !</p>
+          </div>
+          <figure class="image trigger">
+            <a href="/gammes-benlian.html"><img class="image" src="./img/Gamme/Corn-Chips.png"></a>
+          </figure>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3 trigger2">
+          <div class="is-centered">
+            <h3 class="title is-3 name-product is-uppercase">Rice Snack</h3><br>
+            <p class="content-product">Des fruits entiers compotés au chaudron avec du jus de raisin blanc.
+              100% fruits, 100% gourmands ! Plus de 10 saveurs en 20cl ou 70cl !</p>
+          </div>
+          <figure class="image trigger">
+            <a href="/gammes-benlian.html"><img src="./img/Gamme/Rice-Snack.png"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-2"></div>
+        <div class="col-md-3">
+          <span id="btn-1" class="type has-dot-hover jus-nav is-bold trigger active">Boissons</span>
+        </div>
+        <div class="col-md-3">
+          <span id="btn-2" class="type has-dot-hover ajvar-nav is-bold trigger">Condiments et Sauces</span>
+        </div>
+        <div class="col-md-3">
+          <span id="btn-3" class="type has-dot-hover is-bold trigger">Snacking</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommandation section -->
+
+  <section id="partenaires" class="section is-primary has-padding-120-bottom has-margin-200-bottom has-padding-200-top">
+
+    <div class="container trigger">
+      <div class="row justify-content-center">
+        <h3 class="title is-2 title-product has-margin-75-bottom">Ils nous font confiance</h3>
+      </div>
+      <div class="row has-margin-75-bottom">
+        <p class="">Des établissements de prestige nous font l’honneur de leur confiance depuis nos débuts, le
+          Peninsula, le Meurice, les Galeries Lafayette gourmet, la Grande épicerie de Paris, la Maison Plisson…</p>
+        <p>Sans oublier les nombreuses épiceries fines, cafés et restaurants, salons de thé, traiteurs dans toute la
+          France. Autant d’acteurs d’un marché en constante mutation qui, comme nous, ont fait le choix de proposer
+          exclusivement des produits d’exception.</p>
+      </div>
+    </div>
+    <div class="container trigger bg-light partner">
+      <div class="columns is-flex partnair">
+        <div class="line-logo">
+          <div><img src="img/logos/logoPPR2.png"></div>
+          <div><img src="img/logos/meurice.png"></div>
+          <div><img src="img/logos/galerieslafayettegourmet.png"></div>
+          <div><img src="img/logos/lge_logo.png"></div>
+          <div><img src="img/logos/maisonplisson.png"></div>
+        </div>
+        <div class="line-logo">
+          <div><img src="img/logos/logo_gg_halles.png"></div>
+          <div><img src="img/logos/drugstore.png"></div>
+          <div><img src="img/logos/bhv.png"></div>
+          <div><img src="img/logos/mavro.png"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="recommandations">
+    <div class="container " ></div>
+    <div class="row justify-content-center has-margin-75-bottom trigger">
+      <h2 class="title is-2 title-product">Contact</h2>
+    </div>
+    </div>
+  </section>
+
+
+  <section >
+    <div class="container has-margin-75-bottom trigger">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-lg-offset-1">
+          <form id="contact-form" method="post" action="" role="form">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="firstname">Prénom <span class="white">*</span></label>
+                <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom">
+                <p class="comments"></p>
+              </div>
+              <div class="col-md-6">
+                <label for="name">Nom <span class="white">*</span></label>
+                <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+                <p class="comments"></p>
+              </div>
+              <div class="col-md-6">
+                <label for="email">Email <span class="white">*</span></label>
+                <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+                <p class="comments"></p>
+              </div>
+              <div class="col-md-6">
+                <label for="phone">Téléphone</label>
+                <input id="phone" type="tel" name="phone" class="form-control" placeholder="Votre Téléphone">
+                <p class="comments"></p>
+              </div>
+              <div class="col-md-12">
+                <label for="message">Message <span class="white">*</span></label>
+                <textarea id="message" name="message" class="form-control" placeholder="Votre Message"
+                  rows="4"></textarea>
+                <p class="comments"></p>
+              </div>
+              <div class="col">
+                <p class="white"><strong>* Ces informations sont requises.</strong></p>
+              </div>
+              <div class="col-md-7">
+                <input type="submit" class="btn " value="Envoyer">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="is-bg-dark is-flex has-flex-column" id="contact">
+    <div class="container">
+      <div class="columns">
+        <div class="column trigger">
+          <p class="is-bold">Siège social</p>
+          <a href="https://goo.gl/maps/xKoANkF8h5oZw1Xd8">112 avenue de Paris 94300 Vincennes</a>
+          <p class="is-bold">Bureaux</p>
+          <a href="https://goo.gl/maps/pPT76UnAQmvUULUJA">40 rue de Montreuil 94300 Vincennes</a><br>
+          <p>© Maison Brasson 2018. Website by <a href="https://www.akrolab.fr" target="_blank">A K R • L A B</a></p>
+        </div>
+        <div class="column trigger">
+          <div class="content">
+            <p class="is-bold">Alexandre</p>
+            <p class="is-bold">Fondateur Maison Brasson - contact commercial</p>
+            <a :ref="tel:+33760421210">07 60 42 12 10</a><br>
+            <a href="mailto:alexandre@maisonbrasson.com">alexandre@maisonbrasson.com</a>
+          </div>
+        </div>
+        <div class="column trigger">
+          <div class="content">
+            <p class="is-bold">Vanessa</p>
+            <p class="is-bold">Administration des ventes et responsable des opérations</p>
+            <a href="tel:+33674877772">06 74 87 77 72</a><br>
+            <a href="mailto:vanessa@maisonbrasson.com">vanessa@maisonbrasson.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="alert text-center cookiealert" role="alert">
+    <b></b> &#x1F36A; Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre site Web. <a href="https://cookiesandyou.com/" target="_blank">en savoir plus</a>
+
+    <button type="button" class="btn btn-primary btn-sm acceptcookies">
+      J'accepte
+    </button>
+  </div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/gsap/TweenMax.js"></script>
+  <script src="node_modules/gsap/TimelineMax.js"></script>
+  <script src="node_modules/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+  <script src="lib/MorphSVGPlugin.min.js"></script>
+  <script src="node_modules/gsap/src/minified/plugins/TextPlugin.min.js"></script>
+  <script src="lib/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+
+  <script src="node_modules/dragdealer/src/dragdealer.js"></script>
+  <script src="node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+  <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+  <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+  <script src="lib/main.js"></script>
+  <script src="lib/cookiealert.js"></script>
+</body>
+
+</html>

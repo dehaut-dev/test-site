@@ -1,0 +1,28 @@
+#container-slider #image-carousel-jus, #container-slider #image-carousel-ajvar, #container-slider #image-carousel-conf, #container-slider #image-carousel-fruits, #container-slider #image-carousel-fruitsmiel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 450px;
+    border-radius: 0; }
+    #container-slider #image-carousel-jus .handle, #container-slider #image-carousel-ajvar .handle, #container-slider #image-carousel-conf .handle, #container-slider #image-carousel-fruits .handle, #container-slider #image-carousel-fruitsmiel .handle {
+      height: 100%; }
+      #container-slider #image-carousel-jus .handle .item, #container-slider #image-carousel-ajvar .handle .item, #container-slider #image-carousel-conf .handle .item, #container-slider #image-carousel-fruits .handle .item, #container-slider #image-carousel-fruitsmiel .handle .item {
+        float: left;
+        position: relative;
+        width: 250px;
+        height: 100%;
+        display: flex;
+        align-items: flex-end; }
+  #container-slider #image-carousel-jus .handle {
+    width: 600%; }
+  #container-slider #image-carousel-ajvar .handle {
+    width: 700%; }
+  #container-slider #image-carousel-conf .handle {
+    width: 600%; }
+  #container-slider #image-carousel-fruits .handle {
+    width: 700%; }
+  #container-slider #image-carousel-fruitsmiel .handle {
+    width: 400%; }
